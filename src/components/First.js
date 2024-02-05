@@ -1,11 +1,20 @@
 import React from "react";
 
-const First=()=>{
+const First=(props)=>{
 
+console.log(props);
 
+// console.log(props)
     return(
-        <h2>hi here my name is lateef ah and i am from kashmir jandk here i am going ot buy some chips</h2>
-    )
+        <div>
+        <h1>friuts</h1>
+       <ul>
+        <li>{props.name}</li>
+        <li>{props.color}</li>
+        <li>{props.price}</li>
+       </ul>
+         </div>
+            )
 }
 
 
